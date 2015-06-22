@@ -1,0 +1,20 @@
+<ion-view view-title="Social Share" ng-controller="socialShareController">
+    <ion-content>
+        <h1>Social Share</h1>
+        <img ng-src="{{imageURL}}">
+        <button class="button button-block button-positive" ng-click="takePicture()">
+            Take Picture
+        </button>
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" placeholder="Subject" ng-bind="subject">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Message" ng-bind="message">
+            </label>
+            <button class="button button-block button-positive" ng-click="shareAnywhere()">
+                Share Anywhere
+            </button>
+        </div>
+    </ion-content>
+</ion-view>
