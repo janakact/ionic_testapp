@@ -56,6 +56,7 @@ angular.module('starter.controllers', [])
             var imagePath = 'img/200x200.gif';
             var link = 'www.google.com';
             $scope.imageURL = imagePath;
+            $scope.subject = "Lol subject";
 
             $scope.takePicture = function () {
                 var options = {
@@ -90,4 +91,10 @@ angular.module('starter.controllers', [])
         })
 
         .controller('PlaylistCtrl', function ($scope, $stateParams) {
-        });
+        })
+        .controller('viewContactsCtrl', function($scope)
+        {
+            
+        }
+
+            );

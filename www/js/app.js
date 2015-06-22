@@ -30,15 +30,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
                         controller: 'AppCtrl'
                     })
 
-                    .state('app.search', {
-                        url: "/search",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/search.html"
-                            }
-                        }
-                    })
-
                     .state('app.browse', {
                         url: "/browse",
                         views: {
@@ -72,6 +63,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
                         views: {
                             menuContent: {
                                 templateUrl: "templates/socialShare.html"
+                            }
+                        }
+                    })
+
+                    .state('app.viewContacts', {
+                        url: "/viewContacts",
+                        views: {
+                            'menuContent': {
+                                templateUrl: "templates/viewContacts.html",
+                                controller: 'viewContactsCtrl'
                             }
                         }
                     });
